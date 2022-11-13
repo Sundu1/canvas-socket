@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+canvas {
+  border: 1px solid black;
+}
+
+.angle_container {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete {
+  background-color: red;
+  color: white;
+}
+
+.angle {
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.angle:hover {
+  background-color: gray;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: white;
+  cursor: pointer;
+}
+
+.angle:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+.color {
+  position: relative;
+  display: flex;
+}
+
+.color_chosen {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+.color_options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  top: 50px;
+  color: black;
+}
+.color_options:hover {
+  cursor: auto;
+}
+
+.color_options_color {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+}
+.color_options_color {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
